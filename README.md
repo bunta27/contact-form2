@@ -9,7 +9,6 @@
 - cp .env.example .env
 
 3. .env を docker-compose のサービス名に合わせて調整
-   
 - DB_CONNECTION=mysql
 - DB_HOST=mysql
 - DB_PORT=3306
@@ -40,33 +39,7 @@ MySQL が起動しない場合は OS によって設定が必要になること�
 - Docker 28.3.0/ Docker Compose v2.38.1
 
 ## ER 図
-> GitHub でレンダリング可能な Mermaid 記法を利用しています。
-
-```mermaid
-erDiagram
-    CATEGORIES ||--o{ CONTACTS : "1 to many"
-
-    CATEGORIES {
-        BIGINT id PK
-        VARCHAR name
-        TIMESTAMP created_at
-        TIMESTAMP updated_at
-    }
-
-    CONTACTS {
-        BIGINT id PK
-        BIGINT category_id FK
-        VARCHAR name
-        ENUM gender        // male / female / other
-        VARCHAR email
-        VARCHAR tel
-        VARCHAR address
-        VARCHAR building   // nullable
-        TEXT detail
-        TIMESTAMP created_at
-        TIMESTAMP updated_at
-    }
-```
+![ER図](docs/er.png)
 
 ## URL
 - 開発環境: http://localhost/
