@@ -8,7 +8,7 @@
 ### 手順（Docker のビルド → マイグレーション → シーディングまで）
 ```bash
 # 1. リポジトリ取得
-git clone <REPOSITORY_URL>
+git clone [<REPOSITORY_URL>](https://github.com/bunta27/contact-form2.git)
 cd <YOUR_PROJECT_DIR>
 
 # 2. .env 作成
