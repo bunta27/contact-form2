@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,11 +11,8 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run(): void
+    public function run()
     {
-        $this->call([
-            CategorySeeder::class,
-            ContactSeeder::class,
-        ]);
+        // \App\Models\User::factory(10)->create();
     }
 }
