@@ -9,12 +9,12 @@ cd ~/coachtech/laravel/contact-form2
 cp .env.example .env
 
 3. .env を docker-compose のサービス名に合わせて調整
-   DB_CONNECTION=mysql
-   DB_HOST=mysql
-   DB_PORT=3306
-   DB_DATABASE=laravel_db
-   DB_USERNAME=laravel_user
-   DB_PASSWORD=laravel_pass
+   ・DB_CONNECTION=mysql
+   ・DB_HOST=mysql
+   ・DB_PORT=3306
+   ・DB_DATABASE=laravel_db
+   ・DB_USERNAME=laravel_user
+   ・DB_PASSWORD=laravel_pass
 
 5. コンテナ起動（ビルド）
 docker-compose up -d --build
