@@ -18,9 +18,9 @@ cp .env.example .env
 #   DB_CONNECTION=mysql
 #   DB_HOST=mysql         # 例: docker-compose.yml の MySQL サービス名が mysql の場合
 #   DB_PORT=3306
-#   DB_DATABASE=app       # 環境に合わせて
-#   DB_USERNAME=root      # 環境に合わせて
-#   DB_PASSWORD=secret    # 環境に合わせて
+#   DB_DATABASE=laravel_db       # 環境に合わせて
+#   DB_USERNAME=laravel_user      # 環境に合わせて
+#   DB_PASSWORD=laravel_pass    # 環境に合わせて
 
 # 4. コンテナ起動（ビルド）
 docker-compose up -d --build
@@ -34,11 +34,6 @@ php artisan key:generate
 
 # 7. マイグレーション & シーディング
 php artisan migrate --seed
-
-# 8. （必要であれば）開発終了時にコンテナ停止
-exit
-docker-compose down
-```
 
 > **メモ**: MySQL が起動しない場合は OS によって設定が必要になることがあります。各自の PC に合わせて `docker-compose.yml` の設定を調整してください。
 
