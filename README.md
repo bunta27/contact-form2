@@ -2,7 +2,7 @@
 
 ## 環境構築
 1. リポジトリ取得
-- git clone git@github.com:bunta27/contact-form2.git
+- git clone [git@github.com:bunta27/contact-form2.git](https://github.com/bunta27/contact-form2.git)
 - cd ~/coachtech/laravel/contact-form2
 
 2. .env 作成
