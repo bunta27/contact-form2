@@ -1,0 +1,49 @@
+body {
+    font-family: 'Inika', sans-serif;
+    color: #8B7969;
+}
+
+.thanks {
+    position: relative;
+    text-align: center;
+    padding: 250px 0;
+    background-color: white;
+}
+
+.thanks::before {
+    content: "Thank you";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    color: #f8f8f8;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+.thanks__message {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 5px 30px;
+    background: #82756A;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all 0.3s ease, box-shadow .3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(39, 35, 31, 0.3);
+}
