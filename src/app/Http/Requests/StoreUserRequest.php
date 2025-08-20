@@ -8,7 +8,7 @@ class StoreUserRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return true; // 認可が必要なら適宜変更
+        return true;
     }
 
     public function rules(): array

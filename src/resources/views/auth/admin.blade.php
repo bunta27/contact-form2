@@ -127,18 +127,18 @@
     document.querySelectorAll('.js-date').forEach(el => {
         const open = () => (typeof el.showPicker === 'function' ? el.showPicker() : el.focus());
 
-    // クリック/フォーカスで即カレンダー表示
+
         el.addEventListener('click', open);
         el.addEventListener('focus', open);
 
-    // 入力キーは基本すべてブロック（Tab/Escape/矢印だけ許可）
+
         el.addEventListener('keydown', e => {
         const ok = ['Tab','Escape','ArrowLeft','ArrowRight','ArrowUp','ArrowDown'];
         if (!ok.includes(e.key)) e.preventDefault();
         });
         el.addEventListener('beforeinput', e => e.preventDefault());
 
-        // ラッパ（▼三角含む）クリックでも開く
+
         el.closest('.date-input')?.addEventListener('click', e => {
         if (e.target !== el) open();
         });

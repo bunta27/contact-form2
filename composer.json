@@ -1,0 +1,11 @@
+{
+    "require-dev": {
+        "xethron/migrations-generator": "^2.0",
+        "doctrine/dbal": "^2.13"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
